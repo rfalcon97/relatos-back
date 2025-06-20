@@ -16,10 +16,8 @@ import config from 'src/environment/config';
           type: 'mssql',
           host: _confiService.database.sqlServer.host,
           port: _confiService.database.sqlServer.port,
-          username: desencriptarRSAIslas29(_confiService.database.sqlServer.username),
-          password: desencriptarRSAIslas29(
-            _confiService.database.sqlServer.password,
-          ),
+          username: _confiService.database.sqlServer.username,
+          password: _confiService.database.sqlServer.password,          
           database: _confiService.database.sqlServer.database,
           schema: _confiService.database.sqlServer.schema, //comentar para produccion
           synchronize: _confiService.database.sqlServer.synchronize, //comentar para produccion
