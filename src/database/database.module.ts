@@ -1,7 +1,6 @@
 import { Global, Module } from '@nestjs/common';
 import { ConfigType } from '@nestjs/config';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { desencriptarRSAIslas29 } from './settings-database';
 import { ENTITIES } from 'src/common/constants/entities';
 import config from 'src/environment/config';
 @Global()
